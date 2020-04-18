@@ -1,29 +1,40 @@
 package onlineexam.model;
 
-import com.fasterxml.jackson.annotation.JsonProperty;
-import lombok.*;
+import lombok.Builder;
+import lombok.Data;
+import lombok.NoArgsConstructor;
+import lombok.ToString;
+
+import javax.persistence.*;
 
 @Data
 @NoArgsConstructor
 @ToString
+@Entity
+@Table(name = "users")
 public class User {
-    @JsonProperty("id")
+    @Id
+    @Column(name = "id")
     private int id;
 
-    @JsonProperty("firstName")
+    @Column(name = "first_name")
     private String firstName;
 
-    @JsonProperty("lastName")
+    @Column(name = "last_name")
     private String lastName;
 
-    @JsonProperty("email")
+    @Column(name = "email")
     private String email;
 
+    @Column(name = "user_id")
+    private String userId;
+
     @Builder
-    public User(int id, String firstName, String lastName, String email) {
+    public User(int id, String firstName, String lastName, String email, String userId) {
         this.id = id;
         this.firstName = firstName;
         this.lastName = lastName;
         this.email = email;
+        this.userId = userId;
     }
 }

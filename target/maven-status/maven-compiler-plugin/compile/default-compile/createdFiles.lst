@@ -2,6 +2,8 @@ onlineexam/OnlineexamCheck.class
 onlineexam/resources/UsersResource.class
 onlineexam/model/User$UserBuilder.class
 onlineexam/AppConfig.class
+onlineexam/App$1.class
+onlineexam/DBConfig.class
 onlineexam/dao/UserDao.class
 onlineexam/model/User.class
 onlineexam/App.class
