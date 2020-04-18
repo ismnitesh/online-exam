@@ -19,7 +19,7 @@
               <transformers>
                 <transformer />
                 <transformer>
-                  <mainClass>org.example.online-exam.onlineexam.App</mainClass>
+                  <mainClass>onlineexam.App</mainClass>
                 </transformer>
               </transformers>
             </configuration>
@@ -51,6 +51,7 @@
   </dependencies>
   <properties>
     <dropwizard.version>2.0.8</dropwizard.version>
+    <swagger.version>1.6.1</swagger.version>
     <hibernate.version>5.4.14.Final</hibernate.version>
     <lombok.version>1.18.4</lombok.version>
   </properties>
