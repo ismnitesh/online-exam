@@ -19,7 +19,7 @@
               <transformers>
                 <transformer />
                 <transformer>
-                  <mainClass>org.example.onlineexam.App.java</mainClass>
+                  <mainClass>org.example.online-exam.onlineexam.App</mainClass>
                 </transformer>
               </transformers>
             </configuration>
